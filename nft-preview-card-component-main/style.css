@@ -1,0 +1,158 @@
+:root{
+    /* color */
+    --clr-primary-soft-blue: hsl(215, 51%, 70%);
+    --clr-primary-cyan: hsl(178, 100%, 50%);
+    --clr-neutral-v-dark-blue-main-bg:hsl(217, 54%, 11%);
+    --clr-neutral-v-dark-blue-card-bg:hsl(216, 50%, 16%);
+    --clr-neutral-v-dark-blue-line:hsl(215, 32%, 27%);
+    --clr-neutral-white:hsl(0, 0%, 100%);
+
+    /* font */
+    --font-size-body:18px;
+    --fnt-family: "Outfit", sans-serif;
+    --fnt-weight-1:300;
+    --fnt-weight-2:400;
+    --fnt-weight-6:600;
+
+    /* border */
+    --radius: 1rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--clr-neutral-v-dark-blue-main-bg);
+    font-family: var(--fnt-family);
+    line-height: 2rem
+}
+main{
+  
+    background-color: var(--clr-neutral-v-dark-blue-card-bg);
+    display: flex;
+    justify-content: center;
+    margin: 5rem 2rem;
+    padding: 1rem;
+    border-radius: var(--radius);
+}
+.img{
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.card-heading{
+    color: var(--clr-neutral-white);
+    font-weight: var(--fnt-weight-6);
+    font-size: var(--font-size-body);
+}
+.card-desc{
+    color: var(--clr-primary-soft-blue);
+    font-weight: var(--fnt-weight-2);
+    line-height: 1.4rem;
+}
+.offer-desc {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.left{
+    color: var(--clr-primary-cyan);
+    font-weight: var(--fnt-weight-6);
+    padding-left: 1rem;
+    position: relative;
+}
+.left::before{
+    content: "";
+    background-image: url(images/icon-ethereum.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position:absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+.right{
+   margin-left: auto;
+   color: var(--clr-primary-soft-blue);
+   position: relative;
+   padding-left: 1.5rem;
+}
+.right::before{
+    content: "";
+    background-image: url(images/icon-clock.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);   
+ }
+
+.styled-hr {
+    width: 100%;
+    border: none;
+    height: 0.15rem; 
+    background-color: var(--clr-neutral-v-dark-blue-line);
+    border-radius: var(--radius);
+}
+
+.creator-details{
+display: inline-block;
+margin-top: 1rem;
+}
+.creation{
+    color: var(--clr-primary-soft-blue);
+    padding-left: 2rem;
+    position: relative;
+}
+.creation::before{
+    content: "";
+    background-image: url(images/image-avatar.png);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+    border: solid  2px var(--clr-neutral-white);
+    border-radius: 50px;
+}  
+.crator-name{
+color: var(--clr-neutral-white);
+}
+
+@media(min-width:1440px){
+    main{
+        max-width: 400px;
+        margin: 7rem auto;
+        padding: 1.5rem;
+    }
+    .img{
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    .card-content {
+        align-items: flex-start;
+        line-height: 4rem;
+    }
+    .card-heading {
+        font-size: 1.5rem;
+    }
+    .card-desc {
+        font-size: 1.2rem;
+    }
+}
+  
