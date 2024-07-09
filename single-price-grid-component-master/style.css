@@ -6,7 +6,9 @@
 
  --clr-neutral-light-gray: hsl(204, 43%, 93%);
  --clr-neutral-grayish-blue: hsl(218, 22%, 67%);
+ --clr-neutral-white:hsl(0, 0%, 100%);
 
+ --clr-background:hsl(187, 32%, 79%);
  /* FONT */
 
  --fnt-size:16px;
@@ -15,7 +17,10 @@
  --fnt-family: "Karla", sans-serif;
 
  /* radius */
- --brdr-radius:0.8rem;
+ --brdr-radius:0.3rem;
+
+ /* margin */
+ --margin-value:1rem;
 }
 
 *{
@@ -23,3 +28,197 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: var(--fnt-family);
+    font-size: var(--fnt-size);
+    background-color: var(--clr-background);
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price-component{
+    margin: 4rem 2rem;
+    display: grid;
+    border-radius: 1rem;
+}
+.description{
+    background-color: var(--clr-neutral-light-gray);
+    border-radius: 1rem 1 rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 0.1px  var(--clr-neutral-light-gray);
+    border-radius: 10px 10px 0 0;
+}
+.price-grid-heading{
+    color: var(--clr-primary-cyan);
+    margin: var(--margin-value);
+}
+.second-heading{
+    color: var(--clr-primary-bright-yellow);
+    margin: var(--margin-value);
+
+}
+.detailed-description{
+    color: var(--clr-neutral-grayish-blue);
+    margin: var(--margin-value);
+    padding-bottom:1rem ;
+    font-size: var(--fnt-size);
+    font-weight: var(--fnt-weight-400);
+    text-align: justify;
+}
+
+.signup-and-price{
+    background-color: var(--clr-primary-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 1.4rem;
+}
+.subscription-heading{
+    color: var(--clr-neutral-white);
+    font-weight: var(--fnt-weight-400);
+    margin-bottom:var(--margin-value);
+    
+}
+.price{
+    margin-bottom:0.5rem ;
+}
+.price-dollar{
+    color: var(--clr-neutral-white);
+    font-size: 1.5rem;
+}
+.month{
+    color: var(--clr-neutral-white);
+    font-size:12px;
+    font-weight: var(--fnt-weight-400);
+    padding-left: 0.85rem;
+}
+.small-data{
+    color: var(--clr-neutral-white);
+    font-size:12px;
+    font-weight: var(--fnt-weight-400);
+   
+}
+.btn{
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    border: none;
+    border-radius: var(--brdr-radius);
+    box-shadow: 3px 2px 5px hsla(0, 0%, 0%, 0.302);
+}
+.btn a{
+    display: block;
+    color: var(--clr-neutral-light-gray);
+    background-color: var(--clr-primary-bright-yellow);
+    font-weight: var(--fnt-weight-700);
+    text-decoration: none;
+    text-align: center;
+    flex: 1;
+    padding: 0.80rem 0;
+    border-radius: var(--brdr-radius);
+}
+.details{
+    background-color: hsl(179, 74%, 47%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: solid 0.1px hsl(179, 74%, 47%);
+    border-radius: 0 0 10px 10px;
+}
+.footer-heading{
+    color: var(--clr-neutral-white);
+    margin:var(--margin-value);
+    font-weight: var(--fnt-weight-400);
+}
+
+ul{
+    list-style-type: none;
+    color: var(--clr-neutral-white);
+    font-size: 12px;
+    margin: 0 0 1rem var(--margin-value);
+    line-height: 16px;
+}
+ 
+@media(min-width:700px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .price-component{
+        max-width: 650px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+ 
+    .description{
+        grid-column: 1/3;
+    }
+
+    .signup-and-price{
+        border: solid 1px var(--clr-primary-cyan);
+        border-radius: 0 0 0 10px;
+    }
+
+    .subscription-heading,
+    .price-dollar,
+    .small-data,
+    .btn{
+        margin-left: 1rem;
+    }
+    .btn{
+        max-width: 200px;
+    }
+
+    .details{
+        border-radius: 0 0 10px 0;
+    }
+
+    .footer-heading,
+    ul{
+        margin-left: 2rem;
+    }
+}
+/* @media(min-width:1440px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .price-component{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .description{
+        grid-column: 1/3;
+    }
+
+    .signup-and-price{
+        border: solid 1px var(--clr-primary-cyan);
+        border-radius: 0 0 0 10px;
+    }
+    .subscription-heading,
+    .price-dollar,
+    .small-data,
+    .btn{
+        margin-left: 1rem;
+    }
+    .btn{
+        max-width: 200px;
+    }
+
+    .details{
+        border-radius: 0 0 10px 0;
+    }
+
+    .footer-heading,
+    ul{
+        margin-left: 2rem;
+    }
+} */
