@@ -83,7 +83,7 @@ hr{
     color: var(--clr-neutral-Weng-Brown);
 }
 .reciepe-preparation-time-section{
-    background-color: var(--clr-neutral-Eggs-ell);
+    background-color: var(--clr-neutral-Rose-White);
     border-radius: 1rem;
 }
 .reciepe-preparation-time-heading{
@@ -161,4 +161,20 @@ hr{
 .reciepe-nutrition-table td:nth-child(2){
     color: var(--clr-primary-dark-raspberry);
     font-weight: var(--fnt-weight-700);
+}
+@media(min-width:700px){
+    body{
+        background-color: var(--clr-neutral-Eggs-ell);
+    }
+    .reciepe{
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: var(--clr-neutral-white);
+    }
+    .reciepe-image{
+        display: block;
+        max-width: 90%;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
 }
