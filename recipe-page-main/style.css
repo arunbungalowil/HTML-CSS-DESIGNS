@@ -19,4 +19,146 @@
     --fnt-weight-400:400; /*font weight for both outfit and young serif*/
     --fnt-weight-600:600;
     --fnt-weight-700:700;
+
+    /* MARGIN */
+    --margin-val-1:1.5rem;
+    --margin-val-2:2rem;
+    --padding-val:2rem;
+}
+
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--clr-neutral-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  
+}
+ul li{
+    padding-left: 1rem;
+    list-style: disc;
+}
+ol li{
+    padding-left: 1rem;
+}
+hr{
+    width: 90%;
+    margin:0 auto;
+    border: none;
+    height: 1px;
+    background-color: var(--clr-neutral-Ligh-Grey);
+}
+.reciepe-aricle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.reciepe-image{
+    max-width: 100%;
+    height: auto;
+}
+.reciepe-article-div{
+    margin:var(--margin-val-1) var(--margin-val-2);
+
+}
+.reciepe-heading{
+    font-family: var(--fnt-family-young-serif);
+    margin-bottom:var(--margin-val-1);
+    font-weight: var(--fnt-weight-600);
+}
+.reciepe-description{
+    font-size: var(--fnt-size);
+    line-height: 1.2rem;
+    text-align: justify;
+    margin-bottom: var(--margin-val-1);
+    font-family: var(--fnt-family-outfit);
+    color: var(--clr-neutral-Weng-Brown);
+}
+.reciepe-preparation-time-section{
+    background-color: var(--clr-neutral-Eggs-ell);
+    border-radius: 1rem;
+}
+.reciepe-preparation-time-heading{
+    color: var(--clr-primary-dark-raspberry);
+    font-family: var(--fnt-family-young-serif);
+    font-weight: var(--fnt-weight-700);
+    padding: 0.8rem 0 0 var(--margin-val-1);
+
+}
+
+.receipe-preparation-time-list{
+    padding: 0 0 1rem 2.5rem;
+    line-height: 1.5rem;
+    font-family: var(--fnt-family-outfit);
+
+}
+.reciepe-ingredients{
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--margin-val-1);
+}
+.reciepe-ingredients-heading,
+.reciepe-instructions-heading,
+.receipe-nutrition-heading{
+    color: var(--clr-primary-dark-raspberry);
+    font-family: var(--fnt-family-young-serif);
+    font-weight: var(--fnt-weight-400);
+    /* margin-bottom: 1rem; */
+}
+.receipe-ingredients-list{
+    font-family: var(--fnt-family-outfit);
+    padding: 1rem;
+    line-height: 1.4rem;
+    font-size: var(--fnt-size);
+}
+.reciepe-instruction{
+    display: flex;
+    flex-direction: column;
+    margin: var(--margin-val-2);
+}
+.reciepe-instructions-list{
+    font-family: var(--fnt-family-outfit);
+    padding: 1rem;
+    line-height: 1.4rem;
+    font-size: var(--fnt-size);
+}
+.reciepe-nutrition{
+    display: flex;
+    flex-direction: column;
+    margin: var(--margin-val-2);
+}
+.receipe-nutrition-description{
+    font-size: var(--fnt-size);
+    line-height: 1.2rem;
+    text-align: justify;
+    margin-top: var(--margin-val-1);
+    font-family: var(--fnt-family-outfit);
+    color: var(--clr-neutral-Weng-Brown);
+}
+.reciepe-nutrition-table{
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.reciepe-nutrition-table tr{
+    border-bottom: 1px solid var(--clr-neutral-Ligh-Grey);
+}
+.reciepe-nutrition-table tr:last-child{
+    border-bottom: none;
+}
+.reciepe-nutrition-table td{
+    padding: 10px;
+    text-align: left;
+}
+.reciepe-nutrition-table td:nth-child(2){
+    color: var(--clr-primary-dark-raspberry);
+    font-weight: var(--fnt-weight-700);
 }
