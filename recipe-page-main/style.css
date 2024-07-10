@@ -1,0 +1,22 @@
+:root{
+    /* COLOR */
+
+    --clr-primary-nutmeg: hsl(14, 45%, 36%);
+    --clr-primary-dark-raspberry: hsl(332, 51%, 32%);
+
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-Rose-White: hsl(330, 100%, 98%);
+    --clr-neutral-Eggs-ell: hsl(30, 54%, 90%);
+    --clr-neutral-Ligh-Grey: hsl(30, 18%, 87%);
+    --clr-neutral-Weng-Brown: hsl(30, 10%, 34%);
+    --clr-neutral-Dark-Charcoal: hsl(24, 5%, 18%);
+
+    /* FONT */
+
+    --fnt-size:16px;  /*for paragraph*/
+    --fnt-family-outfit: "Outfit", sans-serif;
+    --fnt-family-young-serif:"Young Serif", serif;
+    --fnt-weight-400:400; /*font weight for both outfit and young serif*/
+    --fnt-weight-600:600;
+    --fnt-weight-700:700;
+}
