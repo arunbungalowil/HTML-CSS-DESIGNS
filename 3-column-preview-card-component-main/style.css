@@ -1,0 +1,24 @@
+:root{
+    /* color */
+    /* ### Primary */
+    --clr-primary-bright-orange: hsl(31, 77%, 52%);
+    --clr-primary-dark-cyan: hsl(184, 100%, 22%);
+    --clr-primary-very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* ### Neutral */
+
+    --clr-neutral-transparent-white : hsla(0, 0%, 100%, 0.75); /*paragraphs*/
+    --clr-neutral-very-light-gray : hsl(0, 0%, 95%); /*background, headings, buttons*/
+
+    /* font */
+
+    --fnt-size:15px;
+    --fnt-family-lexend-deca:"Lexend Deca", sans-serif;
+    --fnt-weight-lexend-deca:400;
+    --fnt-family-big-shoulders-display:"Big Shoulders Display", sans-serif;
+    --fnt-weight-big-shoulders-display:700
+
+    /* border-radius */
+    --radius-val-1:0.85rem;
+    --radius-val-2:3rem;
+}
