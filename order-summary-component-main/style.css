@@ -1,0 +1,18 @@
+:root{
+    /* COLOR */
+    --clr-primary-pale-blue: hsl(225, 100%, 94%);
+    --clr-primary-bright-blue: hsl(245, 75%, 52%);
+
+    --clrneutral-very-pale-blue: hsl(225, 100%, 98%);
+    --clrneutral-desaturated-blue: hsl(224, 23%, 55%);
+    --clrneutral-dark-blue: hsl(223, 47%, 23%);
+
+    /* FONT */
+
+    --fnt-size-para:16px;
+    --fnt-weight-500:500;
+    --fnt-weight-700:700;
+    --fnt-weight-900:900;
+    --fnt-family:"Red Hat Display", sans-serif;
+
+}
