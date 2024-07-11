@@ -16,9 +16,174 @@
     --fnt-family-lexend-deca:"Lexend Deca", sans-serif;
     --fnt-weight-lexend-deca:400;
     --fnt-family-big-shoulders-display:"Big Shoulders Display", sans-serif;
-    --fnt-weight-big-shoulders-display:700
+    --fnt-weight-big-shoulders-display:700;
 
-    /* border-radius */
+    /* border radius */
+
     --radius-val-1:0.85rem;
     --radius-val-2:3rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-neutral-very-light-gray);
+    font-size: var(--fnt-size);
+}
+.card-component-main{
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 1.5rem;
+}
+.card-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.5rem;
+    color: var(--clr-neutral-transparent-white);
+
+}
+.first{
+    background-color: var(--clr-primary-bright-orange);
+    border-radius: var(--radius-val-1) var(--radius-val-1) 0 0;
+}
+.second{
+    background-color: var(--clr-primary-dark-cyan);
+}
+.third{
+    background-color: var(--clr-primary-very-dark-cyan);
+    border-radius: 0 0 var(--radius-val-1) var(--radius-val-1);
+}
+/* .card-img{
+    padding-bottom: 1.5rem;
+} */
+.card-heading{
+    font-family: var(--fnt-family-big-shoulders-display);
+    font-weight: var(--fnt-weight-big-shoulders-display);
+    color: var(--clr-neutral-very-light-gray);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+.card-para{
+    font-family: var(--fnt-family-lexend-deca);
+    font-weight: var(--fnt-weight-lexend-deca);
+    color: var(--clr-neutral-transparent-white);
+    font-size: var(--fnt-size);
+    text-align: left;
+    text-decoration: none;
+    padding: 10px 10px  10px 0;
+}
+.btn{
+    width: 40%;
+    padding:8px;
+    border-radius: var(--radius-val-2);
+    border: none;
+    background-color: var(--clr-neutral-very-light-gray);
+    margin: 1rem 0 0 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-1:hover{
+    background-color:var(--clr-primary-bright-orange);
+    border: 1px solid var(--clr-neutral-very-light-gray);
+}
+.btn-1:hover .more-info-1{
+    color: var(--clr-neutral-very-light-gray);
+}
+
+.btn-2:hover{
+    background-color:var(--clr-primary-dark-cyan);
+    border: 1px solid var(--clr-neutral-very-light-gray);
+}
+.btn-2:hover .more-info-2{
+    color: var(--clr-neutral-very-light-gray);
+}
+
+.btn-3:hover{
+    background-color:var(--clr-primary-very-dark-cyan);
+    border: 1px solid var(--clr-neutral-very-light-gray);
+}
+
+.btn-3:hover .more-info-3 {
+    color: var(--clr-neutral-very-light-gray);
+}
+.info{
+    text-decoration: none;
+    display: inline-block;
+}
+.more-info-1{
+    color: var(--clr-primary-bright-orange);
+}
+
+.more-info-2{
+    color: var(--clr-primary-dark-cyan);
+}
+.more-info-3{
+    color: var(--clr-primary-very-dark-cyan);
+}
+
+
+@media(min-width:700px){
+    .card-component-main{
+        max-width: 500px;
+    }
+    .card-section{
+        padding: 3rem;
+    }
+    .btn{
+        width: 30%;
+    }
+    .info{
+        font-size: 14px;
+    }
+}
+@media(min-width:1440px){
+    .card-component-main{
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card-section{
+        padding: 2.5rem;
+        height: 100%;
+    }
+    .first{
+        background-color: var(--clr-primary-bright-orange);
+        border-radius: var(--radius-val-1)  0 0 var(--radius-val-1);
+    }
+    .third{
+        background-color: var(--clr-primary-very-dark-cyan);
+        border-radius: 0  var(--radius-val-1)  var(--radius-val-1) 0;
+    }
+    .card-heading{
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding: 1.5rem 0;
+    }
+    .card-para{
+        font-size: var(--fnt-size);
+        line-height: 1.5rem;
+        padding-bottom: 3.5rem;
+    }
+    .btn{
+        width: 60%;
+        padding:10px;
+    }
 }
