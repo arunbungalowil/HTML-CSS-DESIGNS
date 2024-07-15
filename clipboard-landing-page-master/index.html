@@ -2,106 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Clipboard landing page</title>
   <link rel="stylesheet" href="style.css">
+ 
 </head>
 <body>
+  <main class="landing-page-main">
+    <header class="landing-page-header">
+      <img src="images/logo.svg" alt="header image copyright logo" class=" landing-page-img header-img">
+    </header>
 
-  <main>
-    <article class="article first-article">
-      <img src="images/logo.svg" alt="" class="copy-right-icon-main">
-      <h1 class="article-heading">
-        A history of everything you copy</h1>
-        <p class="article-para">
-           Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.
-        </p>
-        <div class="button-div">
-          <button class="btn btn-1">Download for iOS
-          </button>
-          <button class="btn btn-2">Download for Mac</button>
-        </div>
-    </article>
-
-    <article class="article second-article">
-      <h1 class="article-heading heading">
-        Keep track of your snippets</h1>
-        <p class="article-para">
-          Clipboard instantly stores any item you copy in the cloud, 
-          meaning you can access your snippets immediately on all your 
-          devices. Our Mac and iOS apps will help you organize everything.
-        </p>
-        <img src="images/image-computer.png" alt="" class="img-article">
-        <h2 class="heading-2">Quick Search
-        </h2>
-        <p class="article-para"> Easily search your snippets by content, category, web address, application, and more.</p>
-        <h2 class="heading-2">  iCloud Sync</h2>
-        <p class="article-para">Instantly saves and syncs snippets across all your devices.</p>
-        <h2 class="heading-2">  Complete History</h2>
-        <p class="article-para">Retrieve any snippets from the first moment you started using the app.</p>
-    </article>
-    <article class="article third-article">
-      <h1 class="article-heading heading">
-        Access Clipboard anywhere</h1>
-        <p class="article-para">
-          Whether you’re on the go, or at your computer, you can access all your Clipboard 
-          snippets in a few simple clicks.
-        </p>
-        <img src="images/image-devices.png" alt="" class="img">
-        <h1 class="article-heading heading">Supercharge your workflow
-        </h1>
-        <p class="article-para">   We’ve got the tools to boost your productivity.</p>
-
-        <img src="images/icon-blacklist.svg" alt="" class="img">
-        <h2 class="heading-2">Create blacklists
-        </h2>
-        <p class="article-para"> Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
-        <img src="images/icon-text.svg" alt="" class="img">
-        <h2 class="heading-2">Plain text snippets
-        </h2>
-        <p class="article-para"> Ensure sensitive  Remove unwanted formatting from copied text for a consistent look.
-        </p>
-        <img src="images/icon-preview.svg" alt="" class="img">
-        <h2 class="heading-2"> Sneak preview
-        </h2>
-        <p class="article-para"> Quick preview of all snippets on your Clipboard for easy access.
-        </p>
-    </article>
-    <section class="company-images">
-      <img src="images/logo-google.png" alt="" class="cmp-img">
-      <img src="images/logo-ibm.png" alt="" class="cmp-img">
-      <img src="images/logo-microsoft.png" alt="" class="cmp-img">
-      <img src="images/logo-hp.png" alt="" class="cmp-img">
-      <img src="images/logo-vector-graphics.png" alt="" class="cmp-img">
+    <section class="landing-page-section landing-page-content section-1 ">
+      <h1 class="section-heading">A history of everything you copy</h1>
+      <p class="landing-page-paragraph"> Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+      <button class="section-button btn btn-ios"><a href="#" class="section-download">  Download for iOS</a></button>
+      <button class="section-button btn btn-mac"><a href="#" class="section-download">Download for Mac</a></button>
     </section>
-    <section class="section">
-      <h1 class="article-heading">
-        Clipboard for iOS and Mac OS</h1>
-        <p class="article-para">
-          Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
-          and you’re ready to start adding to your clipboard.
-        </p>
-        <div class="button-div">
-          <button class="btn btn-1">Download for iOS
-          </button>
-          <button class="btn btn-2">Download for Mac</button>
-        </div>
-    </section>
-    <footer>
-      <img src="images/logo.svg" alt="" class="copy-right">
-      <p class="footer-content">FAQs</p>
-      <p class="footer-content">Contact Us</p>
-      <p class="footer-content">Privacy Policy</p>
-      <p class="footer-content">Press Kit</p>
-      <p class="footer-content">Install Guide</p>
 
-      <img src="images/icon-facebook.svg" alt="" class="social-icon">
-      <img src="images/icon-twitter.svg" alt="" class="social-icon">
-      <img src="images/icon-instagram.svg" alt="" class="social-icon">
+    <article class="landing-page-article landing-page-content article-1 ">
+      <h1 class="article-heading"> Keep track of your snippets</h1>
+      <p class="landing-page-paragraph"> Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+      <img src="images/image-computer.png" alt="computer image" class="landing-page-img article-img " width="200px" height="200px">
+      <div class="article-sub-parts">
+        <h2 class="sub-heading">Quick Search</h2>
+        <p class="landing-page-paragraph"> Easily search your snippets by content, category, web address, application, and more.</p>
+      </div>
+      <div class="article-sub-parts">
+        <h2 class="sub-heading">iCloud Sync</h2>
+        <p class="landing-page-paragraph">Instantly saves and syncs snippets across all your devices.</p>
+      </div>
+      <div class="article-sub-parts">
+        <h2 class="sub-heading">Complete History</h2>
+        <p class="landing-page-paragraph">Retrieve any snippets from the first moment you started using the app.</p>
+      </div>
+      
+    </article>
+
+    <article class="landing-page-article article-2 landing-page-content">
+      <h1 class="article-heading"> Access Clipboard anywhere</h1>
+      <p class="landing-page-paragraph">Whether you’re on the go, or at your computer, you can access all your Clipboard  snippets in a few simple clicks.</p>
+      <img src="images/image-devices.png" alt="image of devices" class="landing-page-img article-img " width="200px" height="200px">
+
+    </article>
+
+    <section class="landing-page-section section-2 landing-page-content">
+      <h1 class="section-heading"> Supercharge your workflow</h1>
+      <p class="landing-page-paragraph">We’ve got the tools to boost your productivity.</p>
+      <div class="section-sub-parts">
+        <img src="images/icon-blacklist.svg" alt="blacklist icon" class="section-sub-img" width="150px" height="150px">
+        <h2 class="sub-heading">
+          Create blacklists</h2>
+        <p class="landing-page-paragraph">  Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+      </div>
+      <div class="section-sub-parts">
+        <img src="images/icon-text.svg" alt="text icon" class="section-sub-img" width="150px" height="150px">
+        <h2 class="sub-heading">  Plain text snippets</h2>
+        <p class="landing-page-paragraph">
+          Remove unwanted formatting from copied text for a consistent look.</p>
+      </div>
+      <div class="section-sub-parts">
+        <img src="images/icon-preview.svg" alt="preview icon" class="section-sub-img" width="150px" height="150px">
+        <h2 class="sub-heading"> Sneak preview</h2>
+        <p class="landing-page-paragraph">
+          Quick preview of all snippets on your Clipboard for easy access.</p>
+      </div>
+    </section>
+
+    <div class=".tech-logos landing-page-content">
+      <img src="images/logo-google.png" alt="logo of google" class="logos" >
+      <img src="images/logo-ibm.png" alt="logo of ibm" class="logos">
+      <img src="images/logo-microsoft.png" alt="logo of microsoft" class="logos">
+      <img src="images/logo-hp.png" alt="logo of hp" class="logos">
+      <img src="images/logo-vector-graphics.png" alt="logo of vector graphics" class="logos">
+    </div>
+
+    <section class="landing-page-section section-2 landing-page-content">
+      <h1 class="section-heading">Clipboard for iOS and Mac OS
+      </h1>
+      <p class="landing-page-paragraph">  Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
+        and you’re ready to start adding to your clipboard.</p>
+      <button class="section-button btn btn-ios"><a href="#" class="section-download"> Download for iOS</a></button>
+      <button class="section-button btn btn-mac"><a href="#" class="section-download"> Download for Mac</a></button>
+    </section>
+    
+  
+    
+    <footer class="landing-page-footer landing-page-content">
+      <img src="images/logo.svg" alt="copyright logo" class="footer-copyright-logo" width="150px" height="150px">
+      <p class="footer-notes"><a href="#">FAQs</a></p>
+      <p class="footer-notes"><a href="#"> Contact Us</a></p>
+      <p class="footer-notes"><a href="#">Privacy Policy</a></p>
+      <p class="footer-notes"><a href="#">Press Kit</a></p>
+      <p class="footer-notes"><a href="#">Install Guide</a> </p>
+      <div class="social-media-links-logo">
+        <img src="images/icon-facebook.svg" alt="facebook icon" class="social-logo facebook-logo"  width="50px" height="100px">
+        <img src="images/icon-twitter.svg" alt="twitter icon" class="social-logo twitter-logo" width="50px" height="100px">
+        <img src="images/icon-instagram.svg" alt="instagram icon" class="social-logo instagram-logo" width="50px" height="100px">
+      </div>
     </footer>
+
   </main>
 </body>
 </html>
