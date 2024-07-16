@@ -1,3 +1,38 @@
-body{
-    background-color: bisque;
+:root{
+    /* ## Colors
+
+    ### Primary */
+
+    --clr-primary-very-dark-blue: hsl(243, 87%, 12%);
+    --clr-primary-desaturated-blue: hsl(238, 22%, 44%);
+
+    /* ### Accent */
+
+    --clr-Bright-blue: hsl(224, 93%, 58%);
+    --clr-Moderate-cyan: hsl(170, 45%, 43%);
+
+    /* ### Neutral */
+
+    --clr-Light-grayish-blue: hsl(240, 75%, 98%);
+    --clr-Light-gray: hsl(0, 0%, 75%);
+
+     /* ## Typography */
+
+    /* ### Body Copy */
+
+    --fnt-size: 16px /* (paragraph)*/
+
+    /* ### Fonts */
+
+    /* #### Headings, Call-to-actions, Header Navigation */
+
+    --fnt-family-main:"Raleway", sans-serif;
+    --fnt-weight-400: 400;
+    --fnt-weight-700: 700;
+
+    /* #### Body */
+
+    --fnt-family-body:"Open Sans", sans-serif;
+    --fnt-weight-body-400: 400; 
+
 }
