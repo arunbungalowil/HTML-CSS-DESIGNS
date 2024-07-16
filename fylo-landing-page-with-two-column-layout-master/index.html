@@ -1,62 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta tags for character set and viewport configuration -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Favicon and title -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  Features
-  Team
-  Sign In
+  <!-- Navigation bar -->
+  <nav>
+    <div class="fylo-logo">
+      <!-- Logo with a link -->
+      <a href="#"><img src="images/logo.svg" alt="fylo navbar link image" class="fylo-img"></a>
+    </div>
+    <div class="fylo-sections">
+      <!-- Navigation links -->
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Sign In</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  All your files in one secure location, accessible anywhere.
+  <main>
+    <!-- First article section -->
+    <article class="fylo-article article-1">
+      <div class="fylo-article-img">
+        <img src="images/illustration-1.svg" alt="fylo main article image" class="img-article">
+      </div>
+      <div class="fylo-content">
+        <!-- Article heading and paragraph -->
+        <h1 class="fylo-heading">All your files in one secure location, accessible anywhere.</h1>
+        <p class="fylo-paragraph">Fylo stores your most important files in one secure location Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+        <!-- Form for email input and button -->
+        <form action="post">
+          <input type="text" placeholder="Enter your email" id="email-id">
+          <button class="sign-in-button">
+            <a href="#">Get Started</a>
+          </button>
+        </form>
+      </div>
+    </article>
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
+    <!-- Second article section -->
+    <article class="fylo-article article-2">
+      <div class="fylo-article-img">
+        <img src="images/illustration-2.svg" alt="fylo article image" class="img-article">
+      </div>
+      <div class="aricle-content article-2-content">
+        <h1 class="article-2-heading"> Stay productive, wherever you are</h1>
+        <p class="article-paragraph"> Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+      </div>
+    </article>
 
-  Get Started
+    <!-- Testimonial section -->
+    <section class="fylo-section section-2">
+      <a href="#" class="fylo-working-link">See how Fylo works</a>
+      <div class="section-card-element">
+        <img src="images/icon-quotes.svg" alt="quotes icon" class="double-quotes">
+        <p class="card-paragraph"> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <div class="card-testimonial-details">
+          <p class="testimonial-name">Kyle Burton</p>
+          <p class="testimonial-designation"> Founder & CEO, Huddle</p>
+        </div>
+      </div>
+    </section>
 
-  Stay productive, wherever you are
+    <!-- Call-to-action section -->
+    <section class="fylo-section section-3">
+      <div class="fylo-content">
+        <h1 class="fylo-heading"> Get early access today</h1>
+        <p class="fylo-paragraph">It only takes a minute to sign up and our free starter tier is extremely generous.If you have any questions, our support team would be happy to help you.</p>
+        <form action="post">
+          <input type="text" placeholder="Enter your email" id="email-id">
+          <button class="sign-in-button">
+            <a href="#">Get Started For Free</a>
+          </button>
+        </form>
+      </div>
+    </section> 
+  </main>
 
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
+  <!-- Footer section -->
+  <footer>
+    <div class="footer-image">
+      <img src="images/logo.svg" alt="logo of fylo" class="fylo-footer-icon img">
+    </div>
 
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
+    <div class="fylo-contact-info" id="contact">
+      <div class="fylo-contacts-container">
+        <img src="images/icon-phone.svg" alt="phone icon" class="fylo-contact-icon">
+        <p class="fylo-contact phone-numer">Phone: +1-543-123-4567</p>
+      </div>
+      <div class="fylo-contacts-container">
+        <img src="images/icon-email.svg" alt="phone icon" class="fylo-contact-icon">
+        <p class="fylo-contact email-id"> example@fylo.com</p>
+      </div>
+    </div> 
 
-  See how Fylo works
+    <div class="fylo-info-links">
+      <ul class="fylo-footer-navigation-links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
 
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
+    <div class="fylo-policy-link">
+      <ul class="fylo-footer-navigation-links">
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </div>
 
-  Kyle Burton
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
+    <div class="fylo-social-media-links">
+      <img src="images/icon-facebook.svg" alt="facebook icon" class="social-links">
+      <img src="images/icon-twitter.svg" alt="twitter icon" class="social-links">
+      <img src="images/icon-instagram.svg" alt="instagram icon" class="social-links">
+    </div>
+  </footer>
   
 </body>
 </html>
