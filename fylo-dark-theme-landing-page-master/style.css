@@ -1,0 +1,33 @@
+:root{
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --clr-dark-blue : hsl(217, 28%, 15%); /*(intro and email sign up background)*/
+    --clr-dark-blue : hsl(218, 28%, 13%); /*(main background)*/
+    --clr-dark-blue : hsl(216, 53%, 9%); /*(footer background)*/
+    --clr-dark-blue : hsl(219, 30%, 18%); /*(testimonials background)*/
+
+    /* ### Accent */
+
+    --clr-cyan: hsl(176, 68%, 64%); /*(inside call-to-action gradient)*/
+    --clr-blue: hsl(198, 60%, 50%); /*(inside call-to-action gradient)*/
+    --clr-ligh-red: hsl(0, 100%, 63%); /* (error)*/
+
+    /* ### Neutral */
+
+    --clr-white: hsl(0, 0%, 100%);
+
+    /* ##font */
+
+    --fnt-size:14px; /*body*/
+
+    /* ### Headings, Call-to-actions, Header Navigation */
+    --fnt-family-main:"Raleway", sans-serif;;
+
+    /* ### Body */
+    --fnt-family-body:"Open Sans", sans-serif;;
+    
+    --fnt-weight-400:400;
+    --fnt-weight-700:700;
+}
